@@ -2,12 +2,12 @@
 
 Summary:	Tool to determine the ink levels of HP and Epson inkjets
 Name:		ink
-Version:	0.3.1
+Version:	0.4.1
 Release:	%mkrel 1
 License:	GPL
 Group:		Publishing
 Url:		http://ink.sourceforge.net/
-BuildRequires:  libinklevel-devel
+BuildRequires:  libinklevel-devel >= 0.7.0
 
 ##### SOURCE FILES #####
 
@@ -34,8 +34,7 @@ printer port is not occupied by HPOJ.
 ##### PREP #####
 
 %prep
-rm -rf $RPM_BUILD_DIR/ink
-%setup -q -n ink
+%setup -q
 
 ##### BUILD #####
 
@@ -66,4 +65,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(2755,lp,sys) %{_bindir}/*
 
 ##### CHANGELOG #####
-
