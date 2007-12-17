@@ -15,7 +15,6 @@ Source: http://heanet.dl.sourceforge.net/sourceforge/ink/%{name}-%{version}.tar.
 
 ##### ADDITIONAL DEFINITIONS #####
 
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 
 ##### DESCRIPTION #####
 
