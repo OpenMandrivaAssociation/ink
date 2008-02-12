@@ -20,7 +20,6 @@ BuildRoot:	%{_tmppath}/%{name}-buildroot
 ##### DESCRIPTION #####
 
 %description
-
 ink is a command line tool for checking the ink level of your printer on
 a system which runs Linux. It supports printers attached via parallel
 port or usb.
