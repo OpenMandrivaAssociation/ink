@@ -13,6 +13,7 @@ BuildRequires:  libinklevel-devel >= 0.8.0
 
 Source: http://heanet.dl.sourceforge.net/sourceforge/ink/%{name}-%{version}.tar.gz
 Patch0: ink-0.5.0-fix-str-fmt.patch
+Patch1: ink-0.5.0-linkage.patch
 
 ##### ADDITIONAL DEFINITIONS #####
 
@@ -36,6 +37,7 @@ printer port is not occupied by HPOJ.
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p0
 
 ##### BUILD #####
 
@@ -50,7 +52,7 @@ rm -rf $RPM_BUILD_ROOT
 # Remove explicit setting of ownerships from the Makefile
 perl -p -i -e 's/-o root -g root//' Makefile
 
-%makeinstall DESTDIR=%{buildroot}/usr
+%makeinstall_std PREFIX=%{_prefix}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
