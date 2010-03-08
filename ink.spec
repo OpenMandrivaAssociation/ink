@@ -7,6 +7,7 @@ Group:		Publishing
 Url:		http://ink.sourceforge.net/
 BuildRequires:  libinklevel-devel >= 0.8.0
 Source:		http://heanet.dl.sourceforge.net/sourceforge/ink/%{name}-%{version}.tar.gz
+#Patch0 sent upstream by Kharec
 Patch0:		ink-0.5.1-fix-str-fmt.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 
