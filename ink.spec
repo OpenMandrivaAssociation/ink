@@ -1,7 +1,7 @@
 Summary:	Tool to determine the ink levels of HP and Epson inkjets
 Name:		ink
 Version:	0.5.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv3
 Group:		Publishing
 Url:		http://ink.sourceforge.net/
