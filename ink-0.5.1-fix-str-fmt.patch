@@ -1,0 +1,22 @@
+Index: ink.c
+===================================================================
+--- ink.c
++++ ink.c	2010-03-08 11:15:48.000000000 +0100
+@@ -36,7 +36,7 @@
+   printf(PACKAGE_STRING);
+   printf("\n");
+   libinklevel_version_string = get_version_string();
+-  printf(libinklevel_version_string);
++  printf(libinklevel_version_string, "%s") ;
+   printf("\n");
+ }
+ 
+@@ -235,7 +235,7 @@
+     for(i = 0; i < MAX_CARTRIDGE_TYPES; i++) {
+       if (threshold == -1 || level->levels[i][INDEX_LEVEL] <= threshold) {
+ 	if (headerNeeded) {
+-	  printf(headerline);
++	  printf(headerline, "%s");
+ 	  printf("%s\n\n", level->model);
+ 	  headerNeeded = 0;
+ 	}
