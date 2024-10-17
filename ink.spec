@@ -4,7 +4,7 @@ Version:	0.5.1
 Release:	2
 License:	GPLv3
 Group:		Publishing
-Url:		http://ink.sourceforge.net/
+Url:		https://ink.sourceforge.net/
 BuildRequires:  libinklevel-devel >= 0.8.0
 Source:		http://heanet.dl.sourceforge.net/sourceforge/ink/%{name}-%{version}.tar.gz
 Patch0:		ink-0.5.1-fix-str-fmt.patch
