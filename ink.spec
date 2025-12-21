@@ -5,6 +5,11 @@ Release:	2
 License:	GPLv3
 Group:		Publishing
 Url:		https://ink.sourceforge.net/
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  libinklevel-devel >= 0.8.0
 Source:		http://heanet.dl.sourceforge.net/sourceforge/ink/%{name}-%{version}.tar.gz
 Patch0:		ink-0.5.1-fix-str-fmt.patch
